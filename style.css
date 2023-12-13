@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Deutsch Gothic';
+    src: local('Deutsch Gothic'), url('Deutsch Gothic.ttf') format('truetype');
+    /* Добавьте другие форматы шрифта, если необходимо */
+}
+
+/* ... (ваш CSS-код) ... */
+
+/* ... (ваш CSS-код) ... */
+
+/* ... (ваш CSS-код) ... */
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #ffeb3b, #00bcd4, #4caf50);
+    background-size: 400% 400%;
+    animation: gradientAnimation 30s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+h1, h2, p, div, span, a {
+    color: white;
+    margin: 0;
+}
+
+/* Добавлены стили для шрифта Deutsch Gothic */
+h1, h2 {
+    font-size: 40px;
+    font-family: "Deutsch Gothic", sans-serif;
+    animation: colorAnimation 10s infinite alternate;
+}
+
+h2 {
+    margin-top: 15px;
+}
+
+.item {
+    margin-top: 20px;
+}
+
+.CV-main {
+    border-radius: 100px;
+    border: 3px solid transparent;
+    box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+    object-fit: cover;
+}
+
+.CV-main:hover {
+    border: 3px solid #FFD700;
+}
+
+.contacts a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contacts a:hover {
+    color: darkred;
+}
+
+.contacts-popup {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    height: auto;
+    z-index: 1;
+    transition: all 0.3s ease;
+    left: 800px;
+    white-space: normal;
+}
+
+.contacts-popup a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.contacts:hover .contacts-popup {
+    display: block;
+}
+
+.about-me {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+/* Увеличены стили для блока с правилом в жизни */
+.rule-of-life {
+    font-size: 24px;
+    color: white;
+    margin-top: 30px;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes colorAnimation {
+    0% {
+        color: white;
+    }
+    25% {
+        color: yellow;
+    }
+    50% {
+        color: black;
+    }
+    75% {
+        color: green;
+    }
+    100% {
+        color: white;
+    }
+}
+
+/* Изменения стилей для элементов контактов */
+.contacts .show-contacts {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    font-family: "Deutsch Gothic", sans-serif;
+    cursor: pointer;
+}
+
+/* ... (ваш код) ... */
